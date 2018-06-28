@@ -1,0 +1,159 @@
+.row
+    margin: 0
+//  === A ===
+a
+    color: $color-gris
+    font-weight: bold
+    &:hover   
+        color: $color-gris
+//  === IMAGEN PORTADA ===
+.imagen-portada
+    // La imagen que se usa
+    background-image: url("../img/fondo.jpg")
+    // La altura de la imagen
+    height: 60vh
+    width: 100%
+    // Los ajustes para crear el efecto de scroll
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+//  — Linea Vertical que acompaña al titulo — 
+.linea-vertical
+    height: 100px
+    width: 50%
+    border-right: 1.5px solid $color-gris
+
+
+// === TITULO === 
+.titulo
+    font-family: 'titulo'
+    font-size: 4rem
+    // Espacio entre las letras
+    letter-spacing: 10px
+    color: $color-negro
+    text-align: center
+
+//  === SUBTITULO === 
+.subtitulo
+    font-family: 'titulo'
+    font-size: 2.75rem
+    color: $color-negro
+    text-align: center
+    letter-spacing: 2px
+    margin-bottom: 2rem
+
+//  === SUB-SUBTITULO === 
+.sub-subtitulo
+    font-family: 'titulo'
+    font-size: 2.4rem
+    color: $color-negro
+    text-align: center
+    letter-spacing: 2px
+    margin-bottom: 2rem
+
+//  === TEXTO ===
+.texto
+    font-family: 'principal'
+    font-size: 1rem
+    color: $color-gris
+    line-height: 1.8rem
+    text-align: justify
+
+// === NAVEGADOR ===
+header.header
+    .navbar
+        background-color: $color-blanco
+        height: 112px
+        .navbar-toggler
+            &:focus
+                outline: none
+        .navbar-brand
+            img
+                width: 250px
+                @media all and(max-width: 420px)
+                    width: 150px
+        .navbar-responsive
+            height: calc(100vh - 112px)
+            position: fixed
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 1000
+            background-color: $color-amarillo
+            font-family: 'titulo'
+            font-size: 2.5rem
+            display: flex
+            align-items: center
+            justify-content: center
+            .nav-item
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                a.nav-link
+                    font-weight: initial
+                    color: $color-negro
+                &:hover .linea_nav
+                    width: 80%
+                    transition: .5s all
+                .linea_nav
+                    position: absolute
+                    left: 0
+                    width: 0%
+                    height: 2px
+                    background-color: $color-negro
+                .active
+                    width: 100%
+        .navbar-collapse
+            .navbar-nav
+                display: block
+                .nav_arriba, .nav_abajo
+                    display: flex
+                    justify-content: center
+                    font-family: 'titulo'
+                    font-size: 2rem
+                    .nav-item
+                        position: relative
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+                        a.nav-link
+                            font-weight: initial
+                            padding: 0 1.5rem
+                            color: $color-negro
+                        &:hover .linea_nav
+                            width: 80%
+                            transition: .5s all
+                        .linea_nav
+                            position: absolute
+                            left: 10%
+                            width: 0%
+                            height: 2px
+                            background-color: $color-amarillo
+                        .active
+                            width: 80%
+
+// === FOOTER ===
+footer.footer
+    background-color: $color-gris
+    color: $color-blanco
+    text-align: center
+    font-family: 'principal'
+    .container
+        padding: 3rem 0 2.6rem 0
+        .redes
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-bottom: 1rem
+            a
+                padding: 0 .5rem
+                img
+                    width: 30px
+        p, a
+            padding: 0.4rem 0
+            margin: 0
+            color: $color-blanco
+            font-weight: initial
