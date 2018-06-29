@@ -54,6 +54,9 @@
                 <a class="navbar-brand" href="../">
                     <img class="img-fluid" src="../img/logo.svg" alt="Logotipo de la empresa">
                 </a>
+                <a class="navbar-brand-responsive" href="../">
+                    <img class="img-fluid" src="../img/logo.svg" alt="Logotipo de la empresa">
+                </a>
                 <button @click="mostrarOcultarMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i v-if="!menuResponsive" class="fas fa-bars"></i>
                     <i v-if="menuResponsive" class="fas fa-times"></i>
@@ -118,6 +121,9 @@
         <main class="page--nosotros">
             <!-- Imagen scroll -->
             <div class="imagen-portada"></div>
+            <section class="imagen-portada-responsive">
+                <div class="imagen"></div>
+            </section>
             <section class="nosotros-nosotros">
                 <!-- Linea vertical -->
                 <div class="linea-vertical"></div>
@@ -126,7 +132,8 @@
                 <div class="row nosotros-informacion">
                     <!-- Columna texto -->
                     <div class="col-sm-6 texto">
-                        Somos un técnico superior en gestión medioambiental y forestal, y una antropóloga con una larga experiencia laboral juntos en otros albergues. Decidimos emprender este proyecto porque creemos que es posible una gestión diferente, una gestión que respete al medio ambiente, e igualitaria para diferentes tipos de personas. El Albergue rural “Les eres” de Benasau utiliza papel de todo tipo reciclado, embases de cristal reciclable, alimentos ecológicos y productos locales, tanto alimenticios como artísticos y deportivos. Con todo esto queremos transmitir y fomentar el ocio rural y de montaña, en torno a los valores de respeto y cuidado del medio ambiente, como forma no sólo de relacionarnos con el entorno, sino también con el resto de personas que nos rodean.
+                        Somos un técnico superior en gestión medioambiental y forestal, y una antropóloga con una larga experiencia laboral juntos en otros albergues. Decidimos emprender este proyecto porque creemos que es posible una gestión diferente, una gestión que respete al medio ambiente, e igualitaria para diferentes tipos de personas. El Albergue rural “Les eres” de Benasau utiliza papel de todo tipo reciclado, embases de cristal reciclable, alimentos ecológicos y productos locales, tanto alimenticios como artísticos y deportivos. Con todo esto queremos transmitir y fomentar el ocio rural y de montaña, en torno a los valores de respeto y cuidado del medio ambiente, como forma no sólo de relacionarnos con el entorno, sino también con el resto de personas que nos rodean. <br>
+                        Colaboramos con la <a href="http://asociaciontesta.es"  target="_blank">Asociación Testa</a> y con la Asociación <a href="http://www.llanerosolidario.org/"   target="_blank">LLanero solidario</a> .
                     </div>
                     <!-- Columna imagen -->
                     <div class="col-sm-6 imagen">

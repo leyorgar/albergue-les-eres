@@ -14,7 +14,7 @@
     <!--Declara palabras claves. Sin utilidad práctica-->
     <meta name="keywords" content="albergue, rural, Alicante, Benasau">
     <!--Declara la descripción de la web Sin utilidad práctica-->
-    <meta name="description" content="El Albergue rural “Les eres” de Benasau es un proyecto que quiere transmitir y fomentar el ocio rural y de montaña, en torno a los valores de respeto y cuidado del medio ambiente, como forma no sólo de relacionarnos con el entorno, sino también con el resto de personas que nos rodean. En Benasau se pueden hacer muchos deportes de multiaventura como kayak, paintball, escalada, barranquismo...">
+    <meta name="description" content="El Albergue rural “Les Eres” de Benasau es un proyecto que quiere transmitir y fomentar el ocio rural y de montaña, en torno a los valores de respeto y cuidado del medio ambiente, como forma no sólo de relacionarnos con el entorno, sino también con el resto de personas que nos rodean. En Benasau se pueden hacer muchos deportes de multiaventura como kayak, paintball, escalada, barranquismo...">
     <!--Declara imagen que deberá mostrarse en Facebook o alguna otra red social Sin utilidad práctica-->
     <meta property="og:image" content="img/miniatura.png">
     <!--Enlaca el archivo CSS-->
@@ -93,6 +93,9 @@
         <header class="header">
             <nav v-bind:class="{ 'fixed-top': menuResponsive }" class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="/">
+                    <img class="img-fluid" src="img/logo.svg" alt="Logotipo de la empresa">
+                </a>
+                <a class="navbar-brand-responsive " href="/">
                     <img class="img-fluid" src="img/logo.svg" alt="Logotipo de la empresa">
                 </a>
                 <button @click="mostrarOcultarMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
