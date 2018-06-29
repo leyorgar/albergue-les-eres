@@ -8,7 +8,7 @@
     <!--Icono que acompañará al title. También será el icono que se guardará a la hora de que hagan un marcador	-->
     <link rel="icon" type="image/png" href="img/favicon.png">
     <!--Bloquea el zoom en smartphones -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--Declara quien es el autor. Sin utilidad práctica-->
     <meta name="author" content="Alberto Maestro Montero and Leyre Ortiz Garcia">
     <!--Declara palabras claves. Sin utilidad práctica-->
@@ -156,7 +156,7 @@
         <!-- Termina el navegador -->
 
         <!-- Empieza el contenido de la página -->
-        <main class="page--principal">
+        <main v-if="!menuResponsive" class="page--principal">
             <!-- Imagen de inicio -->
             <section class="imagen-inicio">
                 <div class="icono"><a href="#bajoscroll"><i class="fas fa-angle-down"></i></a></div>
@@ -188,7 +188,7 @@
                         </p>
                     </div>
                 </div>
-                <h3 class="sub-subtitulo">Benisa para aventureros</h3>
+                <h3 class="sub-subtitulo">Benasau para aventureros</h3>
                 <div class="imagen_iconos-aventura">
                     <img src="img/principal/iconos-aventura.svg" alt="iconos-aventura">
                 </div>
@@ -222,7 +222,7 @@
                         <h3 class="sub-subtitulo">Donde encontrarnos</h3>
                         <p class="texto">Partida nº1, 03814 Benasau, Spain</p>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.649206842179!2d-0.5274078574295478!3d38.702901443105645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61812d49d79143%3A0xee50fe8bdeffce0!2sUnnamed+Road%2C+03819+Alcoy%2C+Alicante!5e0!3m2!1ses!2ses!4v1529841127857" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3114.2163657697047!2d-0.348184684655748!3d38.689873979603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQxJzIzLjYiTiAwwrAyMCc0NS42Ilc!5e0!3m2!1ses!2ses!4v1530291860012" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
